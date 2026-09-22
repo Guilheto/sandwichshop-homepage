@@ -1,0 +1,1 @@
+(()=>{"use strict";const n=document.getElementById("content");!function(){n.innerHTML="";const e=document.createElement("div");e.classList.add("home"),e.innerHTML="\n    <h2>Just arrived in Japan</h2>\n    <h1>Sandoya</h1>\n    <p>Savor the Flavor, Join the Club!</p>\n    ",n.appendChild(e)}(),console.log("Hello restaurant!"),console.log("Hello from Sandoya")})();

@@ -1,6 +1,6 @@
 const content = document.getElementById("content")
 
-function renderHome() {
+export function renderHome() {
     content.innerHTML = ""
 
     const home = document.createElement('div');
@@ -12,5 +12,3 @@ function renderHome() {
     `;
     content.appendChild(home)
 }
-
-renderHome()

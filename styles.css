@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Comico';
+  src: url('./fonts/Comico_Complete/Fonts/WEB/fonts/Comico-Regular.woff2') format('woff2'),
+    url('./fonts/Comico_Complete/Fonts/WEB/fonts/Comico-Regular.woff') format('woff'),
+    url('./fonts/Comico_Complete/Fonts/WEB/fonts/Comico-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* color */
+  --color-primary: #B02222;
+  --background-color: #FBFADA;
+  --text-color: #3E3B3B;
+
+  /* font */
+  --font-primary: 'Comico', sans-serif;
+  --font-secondary: 'Noto Sans JP';
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--background-color);
+  border-bottom: solid 3px var(--color-primary);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.home {
+  background-image: url('imgs/HOME-IMG.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.home.show {
+  opacity: 1;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 16, 16, 0.350);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  gap: 0.1rem;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-size: 120px;
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  color: var(--background-color);
+  letter-spacing: -2px;
+  font-size: 40px;
+}
+
+p {
+  font-family: var(--font-secondary);
+  color: var(--background-color);
+  font-size: 32px;
+  font-weight: 200;
+}

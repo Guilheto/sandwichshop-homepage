@@ -1,4 +1,5 @@
 import {renderHome} from "./home.js"
+import {homeDelay} from "./home.js"
 import {renderMenu} from "./menu.js"
 import {renderContact} from "./contact.js"
 import {greetings} from "./greetings.js"
@@ -10,6 +11,7 @@ const homeButton = document.querySelector('#home-btn')
 
 homeButton.addEventListener("click", () => {
     renderHome();
+    homeDelay(); 
 });
 
 const menuButton = document.querySelector('#menu-btn')

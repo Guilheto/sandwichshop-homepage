@@ -14,3 +14,8 @@ export function renderHome() {
     `;
     content.appendChild(home)
 }
+export function homeDelay() {
+    setTimeout(() => {
+        document.querySelector(".home").classList.add("show");
+    }, 100); // Change 500 to your desired milliseconds
+};

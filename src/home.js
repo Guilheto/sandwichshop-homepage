@@ -6,9 +6,11 @@ export function renderHome() {
     const home = document.createElement('div');
     home.classList.add('home')
     home.innerHTML = `
-    <h2>Just arrived in Japan</h2>
-    <h1>Sandoya</h1>
-    <p>Savor the Flavor, Join the Club!</p>
+    <div class="title">
+        <h2>It's about food</h2>
+        <h1>SANDOYA</h1>
+        <p>Savor the Flavor, Join the Club!</p>
+    </div>  
     `;
     content.appendChild(home)
 }

@@ -7,9 +7,9 @@ export function renderHome() {
     home.classList.add('home')
     home.innerHTML = `
     <div class="title">
-        <h2>It's about food</h2>
-        <h1>SANDOYA</h1>
-        <p>Savor the Flavor, Join the Club!</p>
+        <h2 class="home-h2">It's about food</h2>
+        <h1 class="home-h1">SANDOYA</h1>
+        <p class="home-p">Savor the Flavor, Join the Club!</p>
     </div>  
     `;
     content.appendChild(home)

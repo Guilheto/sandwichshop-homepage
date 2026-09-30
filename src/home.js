@@ -17,5 +17,5 @@ export function renderHome() {
 export function homeDelay() {
     setTimeout(() => {
         document.querySelector(".home").classList.add("show");
-    }, 100); // Change 500 to your desired milliseconds
+    }, 200); // Change 500 to your desired milliseconds
 };

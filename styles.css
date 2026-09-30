@@ -48,17 +48,13 @@ button {
   cursor: pointer;
 }
 
-#content {
-  background-color: var(--background-color);
-}
-
 .home {
   background-image: url('imgs/HOME-IMG.jpg');
   background-size: cover;
   height: 100vh;
   position: relative;
   opacity: 0;
-  transition: opacity 0.5s ease-out3
+  transition: opacity 0.5s ease-out;
 }
 
 .home.show {

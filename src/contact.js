@@ -22,7 +22,7 @@ export function renderContact() {
         </div>
     </div>   
 
-    <form action="https://formspree.io/f/{FORM_ID}" class="fs-form" target="_top" method="POST">
+    <form action="https://formspree.io/f/{FORM_ID}" target="_blank" class="fs-form" target="_top" method="POST">
         <div class="fs-field">
             <label class="fs-label" for="name">Full name</label>
             <input class="fs-input" id="name" name="name" required />

@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Comico';
+  src: url('./fonts/Comico_Complete/Fonts/WEB/fonts/Comico-Regular.woff2') format('woff2'),
+    url('./fonts/Comico_Complete/Fonts/WEB/fonts/Comico-Regular.woff') format('woff'),
+    url('./fonts/Comico_Complete/Fonts/WEB/fonts/Comico-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* color */
+  --color-primary: #B02222;
+  --background-color: #FBFADA;
+  --text-color: #3E3B3B;
+
+  /* font */
+  --font-primary: 'Comico', sans-serif;
+  --font-secondary: 'Noto Sans JP';
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--background-color);
+  border-bottom: solid 3px var(--color-primary);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home {
+  background-image: url('imgs/HOME-IMG.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.home.show {
+  opacity: 1;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 16, 16, 0.350);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  gap: 0.1rem;
+}
+
+.home-h1 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-size: 120px;
+}
+
+.home-h2 {
+  font-family: var(--font-secondary);
+  color: var(--background-color);
+  letter-spacing: -2px;
+  font-size: 40px;
+}
+
+.home-p {
+  font-family: var(--font-secondary);
+  color: var(--background-color);
+  font-size: 32px;
+  font-weight: 200;
+}
+
+/* menu page*/
+
+.menu {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.page-title {
+  display: flex;
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: -4px;
+}
+
+.subtitle {
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+
+}
+
+.menu-items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4"
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-secondary);
+  color: var(--text-color);
+  gap: 1rem;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.item p {
+  font-size: 1.5rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.hot-cold {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-color);
+  font-family: var(--font-secondary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* CONTACT */
+.contact {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: var(--background-color);
+  padding-bottom: 3rem;
+}
+
+.about {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about img {
+  width: 100%;
+  height: auto
+}
+
+#about-text {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  width: 100%;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.fs-field {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.fs-label {
+  font-family: var(--font-secondary);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.fs-input {
+  border: solid var(--color-primary) 2px;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.fs-textarea {
+  border: solid var(--color-primary) 2px;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  height: 300px;
+}
+
+.fs-button-group{
+  background-color: var(--color-primary);
+  width: 40%;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.fs-button {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
